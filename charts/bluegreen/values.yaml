@@ -1,6 +1,4 @@
-# Default values for bluegreen.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+color: lightgreen
 
 replicaCount: 1
 
@@ -55,6 +53,11 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+route:
+  enabled: true
+  annotations: {}
+  tls: true
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
