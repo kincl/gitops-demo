@@ -1,0 +1,8 @@
+commonLabels:
+  app.kubernetes.io/name: ads-b
+  app.kubernetes.io/component: backend
+
+resources:
+  - ws-deployment.yaml
+  - ws-service.yaml
+  - ws-route.yaml

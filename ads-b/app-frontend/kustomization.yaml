@@ -1,0 +1,8 @@
+commonLabels:
+  app.kubernetes.io/name: ads-b
+  app.kubernetes.io/component: frontend
+
+resources:
+  - ui-deployment.yaml
+  - ui-service.yaml
+  - ui-route.yaml
