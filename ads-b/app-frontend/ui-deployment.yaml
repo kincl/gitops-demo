@@ -26,9 +26,10 @@ spec:
         volumeMounts:
         - name: npm
           mountPath: /opt/app-root/src/.npm
-        env:
-        - name: REACT_APP_FLIGHT_API_SERVICE_URL
-          value: "http://ads-b-service-jkincl.apps.tacos.dota-lab.iad.redhat.com/ads-b-states"
+        - name: config
+          mountPath: "/opt/app-root/src/.env"
+          subpath: env
+          readOnly: true
       securityContext:
         runAsNonRoot: true
         seccompProfile:
@@ -36,3 +37,6 @@ spec:
       volumes:
       - name: npm
         emptyDir: {}
+      - name: config
+        configMap:
+          name: config  

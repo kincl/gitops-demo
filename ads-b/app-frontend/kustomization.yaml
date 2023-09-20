@@ -6,3 +6,4 @@ resources:
   - ui-deployment.yaml
   - ui-service.yaml
   - ui-route.yaml
+  - ui-configmap.yaml
