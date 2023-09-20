@@ -7,8 +7,7 @@ spec:
   - port: 8888
     protocol: TCP
     targetPort: 8888
-    nodePort: 30000
   selector:
     app.kubernetes.io/name: ads-b-service
-  type: NodePort
+  type: ClusterIP
 

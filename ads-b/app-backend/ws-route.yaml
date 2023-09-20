@@ -7,5 +7,5 @@ spec:
     kind: Service
     name: ads-b-service
   port:
-    targetPort: 8080
+    targetPort: 8888
   wildcardPolicy: None
