@@ -28,7 +28,7 @@ spec:
           mountPath: /opt/app-root/src/.npm
         env:
         - name: REACT_APP_FLIGHT_API_SERVICE_URL
-          value: "http://ads-b-service.local:30000/ads-b-states"
+          value: "http://ads-b-service-jkincl.apps.tacos.dota-lab.iad.redhat.com/ads-b-states"
       securityContext:
         runAsNonRoot: true
         seccompProfile:
